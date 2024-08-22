@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --color1: #6fd5a9dd;
+    --color2: #5bc396dd;
+    --text-color1: white;
+    --text-color2: black;
+}
+
+.navbar {
+    background-color: var(--color1);
+    height: max-content;
+}
+
+.container {
+
+    margin: 0 auto;
+    padding: 0 40px;
+    overflow: auto;
+}
+
+.navbar .flex {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.logo {
+    font-size: 50px;
+    color: var(--text-color1);
+}
+
+.flex {
+    height: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+nav {}
+
+.flex ul {
+    display: flex;
+    
+    list-style-type: none;
+
+}
+
+.items {
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 5px;
+    color: var(--text-color1);
+}
+
+.items:hover {
+    border-bottom: 2px solid black;
+}
+
+.fe-heading{
+
+    background-color: var(--color2);
+display: flex;
+padding: 50px 0px;
+justify-content: space-evenly;
+flex-direction: row;
+align-items: center;
+flex-wrap: wrap;
+/* column-gap: 100px; */
+color: var(--text-color1);
+}
+.fe-text{
+    /* width:  800px; */
+    /* margin-right: 150px; */
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  flex-wrap: wrap;
+align-content: center;
+justify-content: center; 
+}
+.fe-text h1{
+font-size: 11vh;
+padding-bottom: 10px;
+/* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+.fe-text p{
+    font-size: 20px;
+}
+.fe-img i{
+    font-size: 20em;
+    color: black;
+}
+.docs{
+    height: 100%;
+    background-color: var(--text-color1);
+display: flex;
+justify-content: center;
+
+/* align-items: center; */
+}
+.card{
+    margin:40px 20px;
+}
+.card1{
+
+    height: 400px;
+    width: 250px;
+    background-color: var(--color2);
+    display: block;
+border-radius:10px ;
+box-shadow: 1px 1px 10px 0px black;
+padding:0px 20px;
+/* align-content: center; */
+}
+hr{
+    color: rgb(218, 213, 213);
+}
+
+.card1 ul{
+    list-style-type: none;
+    display: block;
+    font-size: 10px;
+}
+.card1 a{
+    border: 0;
+    text-decoration: none;
+    font-size: 20px;
+    /* padding-top: 50px; */
+    line-height: 30px;
+}
+.card1 h3{
+    font-size: 25px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    
+}
+.sidenav:focus{
+    color: rgb(30, 30, 131);
+}
+.sidenav{
+    color: var(--text-color2);
+}
+.card2{
+    height: max-content;
+    width: 600px;
+    /* background-color: var(--color2); */
+    display: block;
+border-radius:10px ;
+box-shadow: 1px 1px 10px 0px black;
+padding:20px 20px;
+/* align-content: center; */
+}
+.card2 input{
+    color: var(--text-color1);
+    background-color: var(--color2);
+    border-radius: 5px;
+    /* padding: 20px; */
+    height: 40px;
+    width: 100px;
+    border: 0;
+    margin: 10px 0px;
+}
+.card2 h3{
+color: var(--text-color1);
+background-color: var(--color2);
+padding: 10px;
+}
+.card2 h2{
+    padding:20px 0px;
+}
+.card2 p{
+    padding:10px 0px;
+
+}
+.card2 .p1{
+    color: var(--text-color1);
+    background-color: var(--text-color2);
+    padding: 10px;
+    }
+.footer{
+    height: max-content;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--color2);
+align-items: center;
+}
+.list{
+    list-style-type: none;
+
+}
+.list a{
+    text-decoration: none;
+
+}
+.itemm{
+    color: var(--text-color1);
+    list-style-type: none;
+    line-height: 30px;
+}
+.social{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.social i{
+font-size: 30px;
+padding: 10px;
+display: inline-flex;
+}
+
+@media screen and (max-width: 900px) {
+    
+
+     .card1{
+        display: none;
+     }
+    
+}
+
+@media screen and (max-width:600px) {
+    .fe-img i{
+        font-size: 50vw;
+
+    }
+    .fe-text{
+        text-align: center;
+    }
+    .flex{
+        flex-direction: column;
+        padding: 20px;
+        row-gap: 50px;
+    }
+    .fe-heading{
+        justify-content: center;
+        align-items: center;
+ flex-direction: column;       
+row-gap: 30px; 
+}
+.footer{
+    /* height: max-content; */
+    padding: 10px;
+    margin-top: 10px;
+    flex-direction: column;
+    row-gap: 50px;
+    
+ }
+ .list{
+    display: flex; 
+    flex-direction: column;
+    column-gap: 50px;
+ }
+ .F-text{
+    text-align: center;
+    
+ }
+ .list{
+    flex-wrap: wrap;
+    flex-direction: column;
+ }   
+
+ .flex ul{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+ }
+
+
+}
